@@ -1,0 +1,54 @@
+Pregunta 1:
+¿Cuántas veces (aprox.) más potente es la señal recibida que el ruido a una distancia de 20m? ¿Y a 200m?
+
+20m -> 30db -> 10 ^ (30 % 10) = 1000
+200m -> 10db -> 10 ^ (10 % 10) = 10
+
+
+Pregunta 2:
+Para una SNR = 10 dB, ¿cuál es la PER del modo 12 Mbps? ¿Y del modo 18 Mbps?
+
+PER del modo 12 Mbps -> 5.58394 * 10^-9
+PER del modo 18 Mbps -> 0.00597705
+
+
+
+Pregunta 3:
+Si queremos que se pierda como mucho 1 cada 10000, ¿cuánto debe ser aprox. la SNR en recepción para
+6, 24 y 54 Mbps? Para una misma potencia del ruido en recepción, ¿cuántas veces mayor es la potencia
+con que necesitamos transmitir para 24 y 54 Mbps con respecto a 6 Mbps?
+
+SNR en recepción para 6  -> 4.53 dB  
+SNR en recepción para 24 -> 14.17 dB
+SNR en recepción para 54 -> 23.34 dB
+
+14.17 - 4.53 =  10
+10 ^ (10 % 10) = 10
+
+23.34 - 4.53 = 19
+10 ^ (19 % 10) = 79,43
+
+
+Pregunta 4:
+Para una PER=10^–8 y distancia de 200m, ¿a qué velocidad podemos transmitir? ¿Con qué modulación y
+tasa de codificación?
+
+		Modulación		Tasa de codificación
+12 Mbps		QPSK			1/2
+9 Mbps  		BPSK			3/4
+
+
+
+Pregunta 5:
+Si la distancia entre transmisor y receptor sigue la siguiente secuencia 50, 70, 100, 150, 220, 270, 300,
+indique la secuencia de modos de transmisión que se debería de utilizar. ¿Qué tasas de bit efectivas
+proporcionarían esos modos de transmisión a esas distancias? ¿Cuál sería la tasa de bit efectiva media?
+
+
+50		70		100		150		220		270		300
+
+54 Mbps		36 Mbps		36 Mbps		18 Mbps		18 Mbps		12 Mbps		6 Mbps
+50.095		36		33.13		18		15.83		7.03		5.939
+
+Tasa de bit efectiva media= (50.095+36+33.13+18+15.83+7.03+5.939) % 7 = 166.024 % 7 = 23.7177
+

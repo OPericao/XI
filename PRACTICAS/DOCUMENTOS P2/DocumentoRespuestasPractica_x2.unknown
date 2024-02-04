@@ -1,0 +1,93 @@
+Ejercicio 1:
+Haciendo zoom sobre las gráficas de Retardo extremo-a-extremo, ¿Cuánto es el retardo del tráfico de
+vídeo y de voz en t = 4s en el caso Sin QoS? ¿Y con QoS?
+
+
+Sin QoS Video = 0.1297
+Sin QoS Voice = 0.1309
+
+Con QoS Video = 0.001104
+Con QoS Voice = 0.001313
+
+
+
+Ejercicio 2: 
+Rellene la siguiente tabla con los datos mostrados en la pestaña Browse Data de los ficheros
+SinQoS_retardo_25.anf y ConQoS_retardo_25.anf. Use una precisión de dos decimales.
+
+
+
+Flujo		Escenario		Retardo	Media [ms]		Retardo Desv. Típica [ms]
+
+Background	Sin QoS			127.28				23.48
+		QoS			1516.72				194.67
+		
+Best effort	Sin QoS			126.57				23.32
+		QoS			327.46				36.43
+		
+Vídeo		Sin QoS			12.71				24.07
+		QoS			1.93				1.07
+
+Voz		Sin QoS			131.95				24.29
+		QoS			1.03				0.65
+
+
+
+Ejercicio 3 
+Haciendo zoom sobre las gráficas de Velocidad, ¿Cuánto es la velocidad del tráfico de vídeo y de voz en t
+= 4s en el caso Sin QoS? ¿Y con QoS?
+
+Sin QoS Video = 0.383
+Sin QoS Voice = 0.018
+
+Con QoS Video = 4.82
+Con QoS Voice = 0.08
+
+
+
+Ejercicio 4 
+Rellene la siguiente tabla con los datos mostrados en la pestaña Browse Data de los ficheros
+SinQoS_retardo_25.anf y ConQoS_retardo_25.anf. Utilice una precisión de tres decimales.
+
+
+Flujo		Tasa fuente [Mb/s]	Escenario	Velocidad Media [Mb/s]		Velocidad Desv. Típica [Mb/s]
+
+Background 	24			Sin QoS		0.011				8.030
+					QoS		0.6144				280.282
+					
+Best effort 	28.8			Sin QoS		0.4864				142.465
+					QoS		2.8992				459.639
+					
+Vídeo 		4.8			Sin QoS		4.2744				307.501
+					QoS		4.798631				84.764
+					
+Voz 		0.1			Sin QoS		3.192				330.937
+					QoS		0.1				2.626
+
+
+
+Ejercicio 5
+Calcule la suma de las velocidades medias en ambos escenarios. ¿En qué escenario es mayor? ¿Por qué
+dicha suma no es igual a la tasa de 54 Mb/s utilizada?
+
+
+Sin QoS	= 0.011 + 0.4864 + 4.2744 + 3.192  = 7.9638
+QoS	= 0.6144 + 2.8992 + 4.798631 + 0.1 = 8.412231
+
+Por fallos de saltos de red o otras cosas que nos comenta chatgpt.
+
+
+Ejercicio 6
+A la vista de la gráfica del jitter para el caso con QoS, ¿Experimentan la voz y el vídeo el mismo jitter? ¿Por
+qué?
+
+El jitter es la variación en el retardo de la transmisión de datos, y es especialmente crítico en aplicaciones de voz y vídeo en tiempo real,
+como las llamadas de voz y las transmisiones de video. Si el jitter es alto, puede causar problemas de calidad, 
+como retrasos en la transmisión o pérdida de paquetes, lo que afectaría negativamente la experiencia del usuario.
+
+Dado que tanto la voz como el vídeo en tu gráfica con QoS se mantienen dentro del rango de -5 a 5 en el eje Y a lo largo del tiempo, 
+podemos concluir que experimentan un jitter similar.
+Esto sugiere que el sistema QoS (Calidad de Servicio) está funcionando eficazmente para priorizar estos flujos de tráfico y mantener
+un jitter bajo y constante para ambas aplicaciones. La QoS es una técnica que se utiliza para garantizar un rendimiento adecuado 
+para aplicaciones sensibles al retardo, como la voz y el vídeo, lo que explicaría por qué experimentan un jitter similar en este caso.
+
